@@ -1,0 +1,625 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Squada+One&display=swap");
+
+:root {
+  --cor-de-fundo: #01301b;
+  --cor-de-texto: #eee9e7;
+  --cor-detalhes: #f25d27;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-link {
+  font-family: "Squada One", sans-serif;
+}
+
+.logo {
+  width: 100px;
+}
+
+.container-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  background-color: #01301b;
+}
+
+.texto-home {
+  color: #eee9e7;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 15%;
+}
+
+.titulo-home {
+  font-size: 7rem;
+  font-family: "Squada One", sans-serif;
+  color: #eee9e7;
+  margin-bottom: 30px;
+  margin-top: 100px;
+}
+
+.custom-btn {
+  background-color: #f25d27;
+  transition: background-color 0.3s ease; /* Animação suave */
+}
+
+.botao {
+  margin-top: -5px;
+  margin-bottom: 20px;
+}
+
+.botao-principal {
+  padding: 10px 20px;
+  background-color: #f25d27;
+  color: #eee9e7;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  font-family: "MontSerrat", sans-serif;
+  max-width: 300px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  position: relative;
+  transition: transform 0.3s; /* Efeito de animação suave */
+}
+
+.botao-principal:focus {
+  outline: none; /* Remove borda de foco ao clicar */
+  box-shadow: none; /* Remove qualquer sombra aplicada ao foco */
+}
+
+.container-geral {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: #eee9e7;
+  padding: 5%;
+}
+
+.titulo-geral {
+  font-family: "Squada One";
+  color: #01301b;
+  font-size: 7rem;
+  transition: all 1s ease-out;
+}
+
+.paragrafo-geral {
+  font-family: "MontSerrat", sans-serif;
+  font-size: 15px;
+  color: black;
+  line-height: 30px;
+  text-align: justify;
+  margin-bottom: 35px;
+}
+
+.card {
+  border-radius: 30%;
+  padding: 2%;
+  transition: transform 0.3s; /* Efeito de animação suave */
+}
+
+.card-body {
+  background-color: #01301b;
+}
+
+.card.visible {
+  opacity: 1; /* Torna visível quando o efeito de scroll for acionado */
+  transform: translateY(
+    0
+  ); /* Você pode adicionar um efeito de movimentação, se desejar */
+}
+
+.card-title {
+  color: #eee9e7;
+  font-family: "Squada One", sans-serif;
+  font-size: 30px;
+}
+
+.card-text {
+  font-family: "MontSerrat", sans-serif;
+  font-size: 70px;
+  color: #eee9e7;
+  text-align: left;
+}
+
+.container-ecommerce {
+  background-color: #01301b;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  background-color: #eee9e7;
+  padding: 5%;
+  align-items: center;
+}
+
+.img-ecommerce img {
+  align-items: center;
+  width: 100px;
+  max-width: 500%;
+  width: 700px;
+  margin-top: -8%;
+  margin-right: 95%;
+  margin-left: -30%;
+}
+
+.texto-geral-ecommerce {
+  max-width: 65%;
+  margin-right: 3%;
+  margin-top: 2%;
+  line-height: 1.8; /* Espaçamento entre linhas */
+}
+
+.titulo-geral-ecommerce {
+  font-family: "Squada One", sans-serif;
+  font-size: 6rem;
+  text-align: start;
+  color: #01301b;
+  margin-top: -8%;
+  max-width: 100%;
+}
+
+.paragrafo-geral-ecommerce {
+  font-family: "MontSerrat", sans-serif;
+  font-size: 15px;
+  color: black;
+  text-align: justify;
+  max-width: 87%;
+  line-height: 2;
+}
+
+.container-telefarmacia {
+  display: flex;
+  flex-direction: row;
+  gap: 8%; /* Espaço uniforme entre as colunas */
+  align-items: flex-start; /* Alinha as colunas no topo */
+  justify-content: space-between; /* Distribui as colunas com espaço entre elas */
+  padding: 5%; /* Espaçamento interno da seção */
+  background-color: #01301b; /* Cor de fundo */
+  height: auto; /* Altura adaptável ao conteúdo */
+}
+
+.coluna {
+  flex: 1; /* Garante que ambas as colunas ocupem o mesmo espaço */
+  max-width: 65%; /* Limita a largura para manter proporção */
+  min-width: 0; /* Evita quebra do layout caso o conteúdo seja muito longo */
+  box-sizing: border-box; /* Inclui padding na largura */
+}
+
+.container-botoes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  max-width: 100vh;
+}
+
+.titulo-telefarmacia,
+.titulo-apps {
+  font-family: "Squada One", sans-serif;
+  font-size: 6rem;
+  color: #eee9e7;
+  font-size: 6rem; /* Ajusta o tamanho para uniformidade */
+  margin-bottom: 1rem; /* Espaço abaixo do título */
+}
+
+.paragrafo-telefarmacia,
+.paragrafo-apps,
+.lista-telefarmacia {
+  font-family: "MontSerrat", sans-serif;
+  color: #eee9e7;
+  text-align: justify;
+  line-height: 1.8; /* Espaçamento entre linhas */
+  margin-bottom: 1rem; /* Espaço abaixo dos parágrafos */
+}
+
+.icone-prodoctor {
+  width: 100px; /* Define a largura do ícone */
+  height: auto; /* Mantém a proporção da imagem */
+  transition: transform 0.3s; /* Efeito de animação suave */
+}
+
+.icone-acare {
+  width: 100px; /* Define a largura do ícone */
+  height: auto; /* Mantém a proporção da imagem */
+  transition: transform 0.3s; /* Efeito de animação suave */
+}
+
+.icone-drugs {
+  width: 100px; /* Define a largura do ícone */
+  height: auto; /* Mantém a proporção da imagem */
+  transition: transform 0.3s; /* Efeito de animação suave */
+}
+
+.coluna a {
+  display: inline-block;
+  margin: 10px 10px 0 0; /* Espaçamento entre os ícones */
+}
+
+.container-ai-imagem {
+  max-width: 100%;
+  height: 100vh;
+  background-color: #eee9e7;
+}
+
+.titulo-ai {
+  font-family: "Squada One", sans-serif;
+  font-size: 6rem;
+  color: #01301b;
+  align-items: center;
+  justify-content: center;
+  padding: 3%;
+  color: #01301b;
+  font-size: 6rem; /* Ajusta o tamanho para uniformidade */
+  margin-bottom: 10%;
+}
+
+.imagem-robo {
+  max-width: 100%;
+  margin-top: -26%;
+}
+
+.titulo-transparente {
+  font-family: "Squada One", sans-serif;
+  font-size: 5rem;
+}
+
+.container-ai-textos {
+  font-family: "MontSerrat", sans-serif;
+  color: #eee9e7;
+  height: 100vh;
+  padding: 8%;
+  text-align: justify;
+  background-color: #01301b;
+  line-height: 24px; /* Define um espaçamento fixo de 24px entre as linhas */
+}
+
+.paragrafo-ai {
+  font-family: "MontSerrat", sans-serif;
+  font-size: 15px;
+  color: #eee9e7;
+  margin-top: 3%;
+  line-height: 24px; /* Define um espaçamento fixo de 24px entre as linhas */
+}
+
+.lista-ai {
+  font-size: 15px;
+  font-family: "MontSerrat", sans-serif;
+  color: #eee9e7;
+  line-height: 1.8;
+}
+
+.container-sustentabilidade {
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  background-color: #eee9e7;
+}
+
+.img-mato {
+  width: 100%;
+  opacity: 0.3;
+}
+
+.textos-sustentabilidade {
+  position: absolute; /* O texto será posicionado sobre a imagem */
+  top: 50%; /* Alinha o texto verticalmente no meio */
+  left: 50%; /* Alinha o texto horizontalmente no meio */
+  transform: translate(-50%, -50%); /* Centraliza o texto perfeitamente */
+  color: white; /* Cor do texto para que ele se destaque sobre a imagem */
+  text-align: center; /* Alinha o texto ao centro */
+  padding: 20px; /* Espaçamento interno para não ficar colado nas bordas */
+  max-width: 90%; /* Limita a largura do texto */
+}
+
+.titulo-sustentabilidade {
+  font-family: "Squada One", sans-serif;
+  font-size: 6rem;
+  color: #01301b;
+}
+
+.paragrafo-sustentabilidade {
+  text-align: justify;
+  color: black;
+}
+
+.container-apresentacao {
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  background-color: #01301b;
+}
+
+.titulo-apresentacao {
+  font-family: "Squada One", sans-serif;
+  font-size: 6rem;
+  color: #eee9e7;
+  padding: 8%;
+}
+
+.apresentacao-paragrafo {
+  font-family: "MontSerrat", sans-serif;
+  color: #eee9e7;
+  font-size: 17px;
+  padding: 8%;
+  margin-top: -15%;
+  text-align: justify;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  background-color: #01301b;
+  margin: auto;
+  height: 750px; /* Ajuste a altura para um valor fixo adequado */
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  opacity: 0.5;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  transform: scale(0.8);
+  margin: 35%;
+  border-radius: 10%;
+  display: flex; /* Ativa o flexbox */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  height: 100%; /* Garante que ocupe toda a altura do carrossel */
+  width: 100%; /* Ajusta para ocupar toda a largura do carrossel */
+}
+
+.carousel-item.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.imagem-carrossel {
+  width: 440px;
+  border-radius: 5%;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); /* Borda iluminada com efeito de brilho */
+  transition: box-shadow 0.2s ease; /* Transição suave para o efeito */
+  max-width: 100%; /* Ajusta a largura da imagem para o tamanho do carrossel */
+  max-height: 100%; /* Garante que a altura da imagem seja proporcional */
+  object-fit: contain; /* Garante que a imagem não se distorça */
+}
+
+.carousel-item.active .imagem-carrossel {
+  box-shadow: 0 0 20px white; /* Efeito de luz mais forte ao redor da imagem */
+}
+
+.container-referencias {
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  background-color: black;
+  padding: 6%;
+}
+
+.titulo-referencias {
+  font-family: "Squada One", sans-serif;
+  color: #eee9e7;
+  font-size: 6rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.paragrafo-referencias {
+  font-family: "MontSerrat", sans-serif;
+  font-size: 10px;
+}
+
+.estilo-lista li {
+  font-family: "MontSerrat", sans-serif;
+  color: #eee9e7;
+  text-align: justify;
+  font-size: 11.5px;
+  margin-bottom: 15px; /* Adiciona um espaço de 15px entre os itens */
+}
+
+/* Media Queries para telas menores */
+
+/* Geral: Ajuste para telas menores que 768px */
+@media (max-width: 768px) {
+  .titulo-home,
+  .titulo-geral,
+  .titulo-geral-ecommerce,
+  .titulo-telefarmacia,
+  .titulo-ai,
+  .titulo-apresentacao,
+  .titulo-sustentabilidade {
+    font-size: 3rem; /* Reduzindo os títulos principais */
+  }
+
+  .paragrafo-geral,
+  .paragrafo-geral-ecommerce,
+  .paragrafo-telefarmacia,
+  .paragrafo-ai,
+  .apresentacao-paragrafo {
+    font-size: 14px; /* Reduzindo o tamanho do texto */
+    line-height: 1.6; /* Ajustando o espaçamento entre linhas */
+  }
+
+  .container-home,
+  .container-geral,
+  .container-ecommerce,
+  .container-telefarmacia,
+  .container-ai-textos {
+    padding: 3%; /* Reduzindo os espaçamentos internos */
+  }
+
+  .botao-principal {
+    font-size: 16px; /* Ajustando o tamanho do botão */
+    padding: 8px 16px; /* Reduzindo o espaçamento interno */
+  }
+
+  .card {
+    padding: 5%; /* Ajustando o espaçamento interno do card */
+  }
+
+  .container-botoes {
+    gap: 50px; /* Diminuindo o espaçamento entre os botões */
+  }
+}
+
+/* Para telas menores que 480px */
+@media (max-width: 480px) {
+  .titulo-home,
+  .titulo-geral,
+  .titulo-geral-ecommerce,
+  .titulo-telefarmacia,
+  .titulo-ai,
+  .titulo-apresentacao,
+  .titulo-sustentabilidade {
+    font-size: 2rem; /* Ajustando os títulos para telas pequenas */
+  }
+
+  .paragrafo-geral,
+  .paragrafo-geral-ecommerce,
+  .paragrafo-telefarmacia,
+  .paragrafo-ai,
+  .apresentacao-paragrafo {
+    font-size: 12px; /* Reduzindo o tamanho do texto */
+  }
+
+  .botao-principal {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .container-home,
+  .container-geral,
+  .container-ecommerce,
+  .container-telefarmacia,
+  .container-ai-textos {
+    flex-direction: column; /* Empilhando os itens para layouts menores */
+  }
+
+  .img-ecommerce img {
+    width: 100%; /* Fazendo a imagem ocupar toda a largura */
+    margin: 0; /* Centralizando automaticamente */
+  }
+
+  .container-botoes {
+    flex-direction: column; /* Empilhando os botões */
+    gap: 20px; /* Diminuindo o espaço entre os botões */
+  }
+
+  .card {
+    flex-direction: column; /* Cards empilhados */
+    padding: 2%; /* Ajustando o espaçamento interno */
+  }
+
+  .carousel {
+    height: auto; /* Permite altura adaptável */
+  }
+
+  .imagem-carrossel {
+    width: 80%; /* Ajusta a largura da imagem para se adequar */
+  }
+}
+
+@media (max-width: 768px) {
+  .titulo-home {
+    font-size: 4rem; /* reduzindo o tamanho do título */
+  }
+}
+
+.img-seta {
+  max-width: 15px; /* imagem ainda menor em telas pequenas */
+}
+
+@media (max-width: 480px) {
+  .botao-principal {
+    font-size: 14px; /* ajustando o tamanho do botão */
+    padding: 6px 12px;
+  }
+
+  .img-seta {
+    max-width: 12px; /* imagem ainda menor em telas muito pequenas */
+  }
+}
+
+@media (max-width: 768px) {
+  .titulo-geral {
+    font-size: 4rem; /* reduzindo o tamanho do título */
+  }
+}
+
+@media (max-width: 768px) {
+  .titulo-geral-ecommerce {
+    font-size: 4rem; /* reduzindo o tamanho do título */
+  }
+}
+
+/* Para telas menores que 768px */
+@media (max-width: 768px) {
+  /* Ajustes para os cards */
+  .card-title {
+    font-size: 1rem;
+  }
+}
+
+.card-text {
+  font-size: 0.9rem;
+}
+
+.btn {
+  font-size: 0.9rem;
+  padding: 8px 12px;
+}
+
+/* Para telas menores que 480px */
+@media (max-width: 480px) {
+  /* Cards */
+  .card-title {
+    font-size: 0.9rem;
+  }
+}
+
+.card-text {
+  font-size: 0.8rem;
+}
+
+.btn {
+  font-size: 0.8rem;
+  padding: 6px 10px;
+}
+
+/* Animações */
+.botao-principal:hover {
+  transform: scale(1.1); /* Amplia levemente ao passar o mouse */
+}
+
+.icone-prodoctor:hover {
+  transform: scale(1.1); /* Amplia levemente ao passar o mouse */
+}
+
+.icone-acare:hover {
+  transform: scale(1.1); /* Amplia levemente ao passar o mouse */
+}
+
+.icone-drugs:hover {
+  transform: scale(1.1);
+}
+
+.card:hover {
+  transform: scale(1.1); /* Amplia levemente ao passar o mouse */
+}
