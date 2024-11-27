@@ -28,7 +28,7 @@ Experiência do Cliente: excelência no relacionamento com o cliente, protagonis
 ![S6](https://github.com/user-attachments/assets/cf029145-df5c-41c7-84a3-9ec07ac99658)
 ![S7](https://github.com/user-attachments/assets/e98c0229-ff37-4670-8881-61adfbb42e6b)
 ![S8](https://github.com/user-attachments/assets/9bc3a00f-2069-4496-84a7-a7e85a158bb4)
-![S9](https://github.com/user-attachments/assets/8c8c8f2c-bed0-4375-9ffd-00186176103b)
+
 
 
 
